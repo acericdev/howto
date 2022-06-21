@@ -1,7 +1,7 @@
 ### Migrate GIT
 
 #### On first time
-- Create new repo URL_NEW_REPO
+- Create new repo `URL_NEW_REPO`
 - Ensure the main repo is named the same (main -> main, or master -> master)
 - On latest pulled origin
 ```bash
@@ -12,7 +12,7 @@ git remote -v
 git push --mirror URL_NEW_REPO
 ```
 
-### On others
+#### On others
 
 ```bash
 git remote set-url origin URL_NEW_REPO
