@@ -13,4 +13,7 @@ git push --mirror URL_NEW_REPO
 ```
 
 ### On others
-- git remote set-url origin URL_NEW_REPO
+
+```bash
+git remote set-url origin URL_NEW_REPO
+```
