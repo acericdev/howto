@@ -1,16 +1,13 @@
-### Migrate GIT
+### Migrate GIT [^1]
 
 #### Before scripts
 - Create new repo `URL_NEW_REPO`
 - Ensure the main repo is named the same (main -> main, or master -> master)
-#### On latest pulled origin
+#### Create a new clone (cleanest solution)
 ```bash
-# Check remotes
-git remote -v
-
-# Mirror current repo to new remote
+git clone --mirror URL_OLD_REPO
+cd OLD_REPO
 git push --mirror URL_NEW_REPO
-git remote set-url origin URL_NEW_REPO
 ```
 
 #### On others
@@ -18,3 +15,5 @@ git remote set-url origin URL_NEW_REPO
 ```bash
 git remote set-url origin URL_NEW_REPO
 ```
+
+[^1]: http://blog.plataformatec.com.br/2013/05/how-to-properly-mirror-a-git-repository/
